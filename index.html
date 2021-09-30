@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <title> Beasiswa </title> 
+</head>
+<body>
+        <center><form> <img src="logo.png" width="200" height="135"><br>
+            <font type=arial black font size="7" > Beasiswa Prestasi </font></form></center>
+    
+        <h1>
+            <font type=arial black font size="4" > Daftar Akun </font>
+        </h1>
+        <fieldset>
+            <legend>Daftar</legend>
+            Nama Lengkap <input type = "text" name = "nama_lengkap"><br/><br/>
+            Tanggal lahir <input type = "datetime" name ="tanggal_lahir"><br/><br/>
+            Email <input type="email" name="email" size="25" id="email" required="required"><br/><br/>
+            <label for="password">Password :</label>
+            <input type="password" placeholder="Enter Password" name="nama" size="25" maxlenght="9" id="password"
+            required="required" pattern="[A-Z]{1,}[a-z]{1,}[0-9]{1,}[.,*!]{1}" title="password harus diikuti angka, minimal 1 huruf kapital, dan salah satu tanda (.,*!)"><br><br>
+            &emsp;&emsp;&emsp;&emsp;&ensp;<input type ="password" name="nama" maxlength="9" placeholder="Konfirmasi Password"><br/><br/>
+            No Telepon <input type ="text" name="no_telepon" maxlength="13"><br/>
+        </fieldset>
+    
+        <h1>
+            <font type=arial black font size="4" > Data Pribadi </font>
+        </h1>
+        <fieldset>
+            Nama Lengkap <input type = "text" name = "nama_lengkap"><br/><br/>
+            Jenis Kelamin
+                <input type="radio" name="jenis_kelamin" value="L"> Laki-laki
+                <input type="radio" name="jenis_kelamin" value="P"> Perempuan <br/><br/>
+            Tanggal Lahir <input type="date" name ="tanggal_lahir"><br/><br/>
+            Kota/Kab/Provinsi <input type="text" name="kota_kab_prov"><br/><br/>
+            Alamat <input type="text" name="alamat"><br/><br/>
+            No Telepon <input type ="text" name="no_telepon" maxlength="13"><br/><br/>
+            Agama <select name="agama">
+                <option value="Islam"> Islam </option> 
+                <option value="Kristen"> Kristen </option> 
+                <option value="Budha"> Budha </option> 
+                <option value="Hindu"> Hindu </option> 
+                <option value="Konghucu"> Konghucu </option><br/><br/>
+                </select>
+        </fieldset>
+    
+        <h1>
+            <font type=arial black font size="4" > Data Studi </font>
+        </h1>
+        <fieldset>
+            Tahun Masuk <input type="text" name="Tahun"><br/><br/>
+            Nama Institusi <input type="text" name="Institusi"><br/><br/>
+            Jenjang/Program Studi 
+                <input type="checkbox" name="jenjang" value="D3"> D3 
+                <input type="checkbox" name="jenjang" value="D4"> D4 
+                <input type="checkbox" name="jenjang" value="S1"> S1 
+                <input type="checkbox" name="jenjang" value="S2"> S2 &emsp;
+                <input type="text" name="prodi" placeholder ="Program Studi"> <br/><br/>
+            Semester <input type="number" name="semester" placeholder="contoh: 1"><br/><br/>
+            IPK Terakhir <input type="text" name="ipk" placeholder="contoh: 3,82"><br/>
+        </fieldset>
+    
+        <h1>
+            <font type=arial black font size="4" > Data Orang Tua </font>
+        </h1>
+        <fieldset>
+            Nama Ayah <input type = "text" name = "nama_ayah"><br/><br/>
+            Pekerjaan <input type = "text" name = "Pekerjaan"><br/><br/>
+            Penghasilan/bulan <input type = "text" name = "gaji" placeholder="ex. Rp 2.500.000"><br/><br/>
+    
+            Nama Ibu <input type = "text" name = "nama_ibu"><br/><br/>
+            Pekerjaan <input type = "text" name = "Pekerjaan"><br/><br/>
+            Penghasilan/bulan <input type = "text" name = "gaji" placeholder="ex. Rp 2.500.000"><br/>
+        </fieldset>
+    
+        <h1>
+            <font type=arial black font size="4" > Data Tambahan </font>
+        </h1>
+        <fieldset>
+            <font type=arial black font size="4" > Prestasi & Upload sertifikat</font><br><br>
+        <form>  
+            <label for="Prestasi">1. </label><input type="prestasi" name="prestasi1" size="35" required="required" placeholder="Masukkan minimal 3 prestasi">
+            <input type="file" name="sertifikat1"><br>
+            <label for="Prestasi">2. </label><input type="prestasi" name="prestasi2" size="35" required="required">
+            <input type="file" name="sertifikat2"><br>
+            <label for="Prestasi">3. </label><input type="prestasi" name="prestasi3" size="35" required="required">
+            <input type="file" name="sertifikat3"><br>
+            <label for="Prestasi">4. </label><input type="prestasi" name="prestasi4" size="35">
+            <input type="file" name="sertifikat4"><br>
+            <label for="Prestasi">5. </label><input type="prestasi" name="prestasi5" size="35">
+            <input type="file" name="sertifikat5"><br>
+        </form>
+        <br>
+            <font type=arial black font size="4" >Alasan mengapa ingin mendapatan beasiswa tersebut</font><br><br>
+        <form>
+            <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Alasan anda"></textarea>
+            <input type="reset" value="Ulangi" name="reset">  
+        </form>
+        </fieldset>
+        <br>
+        <br>
+        <center><form>
+            <input type="submit" value="Submit" name="submit">
+            <input type="button" value="Batal" name="cancel">
+        </form></center>
+</body>
